@@ -372,3 +372,8 @@ begin
     alter publication supabase_realtime add table public.kids;
   end if;
 end $$;
+
+-- ---------- O Jaime 👶 ----------
+insert into public.kids (name, emoji, color)
+select 'Jaime', '👶', '#f59e0b'
+where not exists (select 1 from public.kids where name = 'Jaime');

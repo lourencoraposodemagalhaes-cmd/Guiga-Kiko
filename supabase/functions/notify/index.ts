@@ -17,7 +17,7 @@ import { createClient } from 'npm:@supabase/supabase-js@2.118.0';
 
 const TZ = 'Europe/Lisbon';
 const MORNING = 8 * 60; // 8:00
-const APP_URL = 'https://lourencoraposodemagalhaes-cmd.github.io/nos-dois/';
+const APP_URL = 'https://lourencoraposodemagalhaes-cmd.github.io/guiga-kiko/';
 
 const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!, {
   auth: { persistSession: false },
